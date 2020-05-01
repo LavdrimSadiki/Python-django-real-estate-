@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lavdrim</title>
+     <!-- Font Awesome -->
+  <link rel="stylesheet" href="{% static 'css/all.css' %}">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="{%  static 'css/bootstrap.css' %}">
+  <!-- Custom -->
+  <link rel="stylesheet" href="{%   static 'css/style.css' %}">
+  <link rel="stylesheet" href="{%   static 'css/lightbox.min.css' %}">
+</head>
+<body>
+<!-- topbar -->
+{%  include  'partials/_topbar.html'%}
+<!-- navbar -->
+{% include 'partials/_navbar.html' %}
+<!--  footer  -->
+
+
+{% block content %} {% endblock %}
+{% include 'partials/footer.html' %}
+
+<script src="{%  static  'js/jquery-3.3.1.min.js' %} "></script>
+  <script src=" {%  static 'js/bootstrap.bundle.min.js' %} "></script>
+  <script src="{%  static 'js/main.js' %} "></script>
+  <script src="{%  static 'js/lightbox.min.js' %} "></script>
+</body>
+</html>
